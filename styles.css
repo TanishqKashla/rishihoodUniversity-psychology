@@ -233,7 +233,6 @@ body {
 
 /* ========== PROGRAM EXPERIENCE SECTION ========== */
 .program-experience-section {
-  background: #f5f5f0;
   padding: 1rem 1rem;
   display: flex;
   justify-content: center;
@@ -519,6 +518,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem 1rem 2rem;
+  background-color: #FAF8F4;
 }
 
 @media (min-width: 640px) {
@@ -573,17 +573,16 @@ body {
 .curriculum-tabs-container {
   background: white;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 0.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.244);
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: thin;
   scrollbar-color: #cc0033 #f3f4f6;
-  border: 1px solid #c1c1c1;
 }
 
 .curriculum-tabs-container::-webkit-scrollbar {
@@ -684,17 +683,19 @@ body {
 }
 
 .curriculum-content-box {
-  background: #faf8f4;
+  background: #ffffff;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   padding: 1.5rem;
   min-height: 320px;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+  border-bottom: 8px solid #cc0033;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.244);
 }
 
 @media (min-width: 768px) {
   .curriculum-content-box {
-    padding: 1rem 3rem;
+    padding: 3rem 3rem 3.4rem;
     min-height: auto;
   }
 }
@@ -718,7 +719,6 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .curriculum-column-right {
@@ -926,6 +926,207 @@ body {
 @media (min-width: 768px) {
   .curriculum-internship-title {
     font-size: 3rem;
+  }
+}
+
+
+/* ========== RESEARCH PUBLICATIONS SECTION ========== */
+.research-publications-section {
+  background-color: #FAF8F4;
+  padding: 3rem 1rem;
+}
+
+.publication-cards-grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* CARD BASE */
+.research-publications-section .publication-card {
+  width: 410px;
+  background-color: #C8102E;
+  border-radius: 12px;
+  padding-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-publications-section .publication-card-image {
+  z-index: 0;
+}
+
+/* IMAGE */
+.research-publications-section .publication-card-image img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+/* WHITE CONTENT CARD */
+.research-publications-section .publication-card-content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.4rem;
+  width: 88%;
+  height: 71%;
+  margin: -70px auto 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 10;
+}
+
+/* AUTHOR ROW */
+.research-publications-section .publication-card-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.publication-author-info-wrapper{
+  display: flex;
+  gap: 18px;
+}
+
+.research-publications-section .publication-author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.research-publications-section .publication-author-name {
+  font-size: 20px;
+  margin-bottom: -4px;
+}
+
+.research-publications-section .publication-author-degree {
+  font-size: 16px;
+  color: #666;
+}
+
+.research-publications-section .publication-author-linkedin {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+}
+
+/* TEXT */
+.research-publications-section .publication-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.8rem 0;
+  line-height: 1.3;
+}
+
+.research-publications-section .publication-card-description {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* ========== INTERNSHIP COMPANIES SECTION ========== */
+.internship-section {
+  background: #ffffff;
+  padding: 3rem 1rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.internship-companies {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.internship-companies .company-logo-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 16px;
+  /* padding: 24px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-height: 40px;
+}
+
+.internship-companies .company-logo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #cc0033;
+}
+
+.internship-companies .company-logo-card img {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(0);
+  transition: all 0.3s ease;
+}
+
+.internship-companies .company-logo-card:hover img {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+  .internship-companies {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-section {
+    padding: 60px 20px;
+  }
+
+  .internship-companies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .internship-companies .company-logo-card {
+    padding: 20px;
+    min-height: 100px;
+  }
+
+  .internship-companies .company-logo-card img {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .internship-section {
+    padding: 40px 16px;
+  }
+
+  .internship-companies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .internship-companies .company-logo-card {
+    padding: 16px;
+    min-height: 80px;
+  }
+
+  .internship-companies .company-logo-card img {
+    max-height: 40px;
   }
 }
 
@@ -1319,12 +1520,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 24px 60px 24px;
-  background-color: white;
-}
-
-.partners-section .section-title {
-  margin-bottom: 0px;
+  padding: 30px 24px;
+  background-color: #ffffff;
 }
 
 .partners-title {
@@ -1337,24 +1534,24 @@ body {
 
 @media (min-width: 768px) {
   .partners-title {
-    font-size: 48px;
-    margin-bottom: 24px;
+    font-size: 2.7rem;
+    margin-bottom: 14px;
   }
 }
 
 .partners-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
   color: black;
-  max-width: 1000px;
+  max-width: 1100px;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
 @media (min-width: 768px) {
   .partners-subtitle {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1368,14 +1565,15 @@ body {
   font-weight: 700;
   color: #1f2937;
   text-align: center;
-  margin-bottom: 32px;
-  margin-top: 50px;
+  margin-bottom: 16px;
+  margin-top: 14px;
 }
 
 @media (min-width: 768px) {
   .partners-category-title {
     font-size: 32px;
     margin-bottom: 40px;
+    margin-top: 24px;
   }
 }
 
@@ -1384,33 +1582,54 @@ body {
 }
 
 .partners-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 24px;
+  }
+}
+
+.guest-partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .guest-partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0px;
   }
 }
 
 .partner-card {
   background: white;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #6b7280;
   border-radius: 12px;
-  padding: 15px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 105px;
+  width: 100%;
+  max-width: 140px;
   height: 79px;
 }
 
 @media (min-width: 768px) {
   .partner-card {
-    width: 140px;
+    max-width: 140px;
+    padding: 16px 8px;
   }
 }
 
@@ -1419,6 +1638,46 @@ body {
   max-height: 100%;
   object-fit: contain;
 }
+
+/* ========== RISHIHOOD FOUNDATION SECTION ========== */
+.rishihood-foundation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #FAF8F4;
+}
+
+.rishihood-foundation-section .section-title {
+  margin-bottom: 0px;
+}
+
+.rishihood-foundation-subtitle {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.rishihood-foundation-text {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  color: #B9002E;
+  max-width: 1260px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.rishihood-foundation-image {
+  max-width: 75%;
+}
+
 
 /* ========== ADVANTAGE SECTION ========== */
 .advantage-section {
@@ -1430,7 +1689,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-  background: #FAF8F4;
+  background: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -3694,7 +3953,7 @@ body {
 /* ========== HERO SECTION ========== */
 .hero-section {
   margin-top: 62px;
-  background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BBB_Landing/assets/hero.webp");
+  background: url("assets/hero-section/hero-bg.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -3709,7 +3968,7 @@ body {
 
 .hero-content {
   width: 100%;
-  padding: 16px 124px;
+  padding: 16px 100px;
   text-align: left;
   flex-grow: 1;
   display: flex;
@@ -3725,7 +3984,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     margin-top: 0px;
-    background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/bdesign_LP/assets/hero-section/Mask+Group+550.png");
+    background-image: url("assets/hero-section/hero-phone.png");
     /* background-size: contain; ensure full image is visible */
     background-position: top center;
     background-repeat: no-repeat;
@@ -3781,7 +4040,7 @@ body {
 
 .hero-button-wrapper {
   margin-top: 1rem;
-  padding: 0 8px;
+  padding: 30px 0;
 }
 
 .hero-button {
@@ -3789,7 +4048,7 @@ body {
   color: white;
   border: none;
   border-radius: 100px;
-  height: 64px;
+  height: 54px;
   width: 170px;
   font-size: 16px;
   font-weight: bold;
@@ -3809,7 +4068,7 @@ body {
   width: 100%;
   height: 22vh;
   z-index: 10;
-  background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/bdesign_LP/assets/hero-section/hero-info-banner.svg");
+  background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/commonLP/hero-bottom-banner.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -3896,7 +4155,7 @@ body {
 
 @media (min-width: 1024px) {
   .hero-section {
-    background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/bdesign_LP/assets/hero-section/Mask Group 541.jpg");
+    background: url("assets/hero-section/hero-bg.png");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -3913,7 +4172,7 @@ body {
   }
 
   .hero-heading {
-    font-size: 110px;
+    font-size: 72px;
     padding-bottom: 12px;
   }
 
@@ -3922,9 +4181,10 @@ body {
   }
 
   .hero-subtext {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
     padding-top: 0px;
+ 
   }
 
   /* .hero-button-wrapper {
@@ -3932,8 +4192,8 @@ body {
   } */
 
   .hero-button {
-    width: 190px;
-    font-size: 20px;
+    width: 200px;
+    font-size: 18px;
   }
 
   /* .hero-bottom-info {
@@ -3942,19 +4202,19 @@ body {
 
   .hero-info-content {
     justify-content: flex-end;
-    padding: 0 80px 0 60px;
+    padding: 0 60px 0 60px;
   }
 
   .hero-info-cards {
-    gap: 32px;
-    padding-right: 4rem;
+    gap: 9%;
+    /* padding-right: %; */
   }
 
-  /* .hero-info-card {
+  .hero-info-card {
     min-width: 180px;
     max-width: 220px;
-    padding: 18px 12px;
-  } */
+  
+  }
 
   .hero-info-icon {
     width: 44px;
@@ -3969,6 +4229,289 @@ body {
     font-size: 20px;
   }
 }
+
+/* program-overview-section */
+.program-overview-section {
+  background-color: rgb(41, 41, 41);
+  background-image: url("assets/program-overview-section/image76.png");
+  background-size: cover;
+  background-position: center right;
+  height: 680px;
+  padding: 3rem 5rem;
+
+}
+
+.program-overview-section .section-title{
+  color: white !important;
+  text-align: left;
+  font-weight: 500;
+}
+
+.program-overview-cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+  max-width: 1090px;
+}
+
+.program-overview-card {
+  background-color: #F4EBE6;
+  border-radius: 8px;
+  padding: 10px 30px 36px 18px;
+}
+
+.program-overview-card-img{
+  height: 45px;
+}
+
+.program-overview-card-desc{
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+/* career outcomes section */
+.career-outcomes-section {
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.5rem;
+
+  background-color: #FFEDD2;
+  border-radius: 12px;
+  padding: 28px 16px;
+  max-width: 95%;
+  overflow-x: hidden;
+}
+
+.outcome-card {
+  padding: 10px 28px 24px;
+  word-wrap: break-word;
+}
+
+.outcomes-grid>div:not(:first-child) {
+  border-left: 1px dashed #000;
+}
+
+.outcome-title{
+  font-size: 22px;
+}
+
+.outcome-list{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 20px;
+  padding-left: 1.1rem;
+}
+
+/* labs-section */
+.labs-section{
+  background-color: #FAF8F4;
+  padding: 3rem 1rem 14rem;
+}
+
+.labs-content-wrapper{
+  margin: 0 6rem;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.labs-background-image{
+  width: 100%;
+}
+
+.labs-info-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  position: absolute;
+  bottom: -140px;
+  left: 0;
+    right: 0;
+}
+
+.lab-info-card{
+  background-color: white;
+  border-radius: 14px;
+  padding: 20px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
+}
+
+.lab-title{
+  font-size: 24px;
+  font-weight: 700;
+  color: #CC0033;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #CC0033;
+  line-height: 1.3;
+  padding-bottom: 12px;
+}
+
+.lab-description{
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* ========== industry tools section ============ */
+.industry-tools-section {
+    padding: 40px 40px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .industry-tools-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1800px;
+    width: 100%;
+  }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    flex: 0 0 auto;
+    max-width: 800px;
+  }
+
+  .tool-card {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    /* padding: 20px 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    height: 90px;
+    width: 100%;
+  }
+
+  .tool-card:hover {
+    border-color: #cc0033;
+    box-shadow: 0 4px 12px rgba(204, 0, 51, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .tool-card img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+
+  .macbook-container {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .macbook-image {
+    width: 380px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .macbook-label {
+    position: absolute;
+    bottom: 20px;
+    background: #cc0033;
+    color: white;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  /* Responsive Design for Tools and MacBook Section */
+  @media (max-width: 1200px) {
+    .industry-tools-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .tools-grid {
+      max-width: 600px;
+    }
+
+    .macbook-image {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .industry-tools-section {
+      padding: 60px 20px;
+    }
+
+
+
+    .tools-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 400px;
+    }
+
+    .tool-card {
+      padding: 20px 15px;
+      height: 85px;
+    }
+
+    .macbook-image {
+      width: 320px;
+    }
+
+    .macbook-label {
+      font-size: 0.95rem;
+      padding: 10px 30px;
+      bottom: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .industry-tools-section {
+      padding: 40px 15px;
+    }
+
+
+
+    .tools-grid {
+      gap: 10px;
+      max-width: 100%;
+    }
+
+    .tool-card {
+      padding: 10px 10px;
+      height: 75px;
+    }
+
+    .macbook-image {
+      width: 100%;
+    }
+
+    .macbook-label {
+      font-size: 0.85rem;
+      padding: 8px 24px;
+      bottom: 10px;
+    }
+  }
 
 /* Specialization Section Styles */
 .specialization-section {
