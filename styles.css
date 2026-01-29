@@ -3979,7 +3979,7 @@ body {
 /* ========== HERO SECTION ========== */
 .hero-section {
   margin-top: 62px;
-  background: url("assets/hero-section/hero-bg.png");
+  background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BscPyschologyLP/assets/hero-section/hero-bg.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -4010,7 +4010,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     margin-top: 0px;
-    background-image: url("assets/hero-section/hero-phone.png");
+    background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BscPyschologyLP/assets/hero-section/hero-phone.webp");
     /* background-size: contain; ensure full image is visible */
     background-position: top center;
     background-repeat: no-repeat;
@@ -4180,7 +4180,7 @@ body {
 
 @media (min-width: 1024px) {
   .hero-section {
-    background: url("assets/hero-section/hero-bg.png");
+    background: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BscPyschologyLP/assets/hero-section/hero-bg.webp");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -4257,7 +4257,7 @@ body {
 
 /* program-overview-section */
 .program-overview-section {
-  background-image: url("assets/program-overview-section/image76.png");
+  background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BscPyschologyLP/assets/program-overview-section/image76.png");
   background-size: cover;
   background-position: center right;
   height: 680px;
@@ -4304,7 +4304,7 @@ body {
 
   .program-overview-section .program-overview-title-wrapper {
     height: 330px;
-    background-image: url("assets/program-overview-section/image\ 76\ phone.png");
+    background-image: url("https://rishihoodmarketingimg.s3.ap-south-1.amazonaws.com/BscPyschologyLP/assets/program-overview-section/image\ 76\ phone.png");
     background-position: top right;
     display: flex;
     justify-content: start;
